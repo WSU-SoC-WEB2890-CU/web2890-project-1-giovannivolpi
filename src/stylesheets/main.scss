@@ -1,3 +1,16 @@
 /* Your styles go here */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.33% - 1rem);
+    margin: 0.5rem;
+  }
+
+  
+  
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
