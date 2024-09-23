@@ -1,3 +1,62 @@
-/* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+/* Your styles go here */
+
+$background-color: #E3D6C1;
+$default-nav: #ffffff;
+$card-color: #E0AB97;
+
+body{
+  background-color: $background-color;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.custom-navbar .nav-link {
+  color: $default-nav; 
+}
+
+.custom-navbar .nav-link:hover {
+  color: $default-nav; 
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff; 
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 1rem);
+  margin: 0.5rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.testimonials__card {
+  animation: fadeInUp 1s ease-in-out;
+}
