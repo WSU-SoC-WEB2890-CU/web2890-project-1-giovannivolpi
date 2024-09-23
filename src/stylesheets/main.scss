@@ -3,6 +3,23 @@
 
 /* Your styles go here */
 
+body{
+  background-color: #FF5D00;
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff; 
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffcc00; 
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff; 
+}
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;

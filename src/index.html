@@ -14,47 +14,79 @@
 
     <!-- *********** NAVBAR *************** -->
 
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand">CarDeal</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sell Car</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
+    <section>
+      <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary custom-navbar" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light">CarDeal</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sell Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
+    
+
 
    <!-- *********** JUMBOTRON / HERO *************** -->
+    <section>
+      <img src="images/logo.svg" alt="cardeal logo" />
 
-    <img src="images/logo.svg" alt="cardeal logo" />
-
-    <!-- LEFT SIDE -->
-    <div class="container text-center">
-      <h2>We Buy "Any" Car!</h2>
-      <h3>Get your free evalutation now!</h3>
-    </div>
+      <div class="container mt-5">
+        <div class="row">
+  
+          <!-- Left Section -->
+          <div class="col-md-6">
+            <div class="text-start">
+              <h2>We Buy "Any" Car!</h2>
+              <h3>Get your free evaluation now!</h3>
+            </div>
+          </div>
+      
+          <!-- Right Section  -->
+          <div class="col-md-6">
+            <h2 class="text-center">Enter Your Car Information</h2>
+            <form action="/submit-car-info" method="POST" class="mt-4">
+               
+              <div class="mb-3">
+                <label for="vin" class="form-label">Vehicle Identification Number (VIN)</label>
+                <input type="text" class="form-control" id="vin" name="vin" placeholder="Enter VIN" required>
+              </div> 
+             
+              <div class="mb-3">
+                <label for="year" class="form-label">Year</label>
+                <input type="number" class="form-control" id="year" name="year" placeholder="Enter Year" required min="1886" max="2024">
+              </div>
+              
+              <div class="mb-3">
+                <label for="make" class="form-label">Make</label>
+                <input type="text" class="form-control" id="make" name="make" placeholder="Enter Make" required>
+              </div>
+      
+              <div class="mb-3">
+                <label for="model" class="form-label">Model</label>
+                <input type="text" class="form-control" id="model" name="model" placeholder="Enter Model" required>
+              </div>
+      
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit Car Information</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    <!-- RIGTH SIDE -->
-    <div class="container text-center">
-      <ul>
-        <li>Enter VIN</li>
-        <li>select Year</li>
-        <li>Select Make</li>
-        <li>Select Model</li>
-      </ul>
-    </div>
 
    <!-- ************* SIX STEPS ******************-->
     <section>
@@ -112,49 +144,42 @@
 
     <!-- ************* ADVANTAGES OF SELLING CAR ******************-->
 
-    <section class="container text-center p-4">
-
-      <h2 class="p-4">The Advantages of Selling Your Car to Cardeal section</h2>
-
-      <div class="text-center">
-        <p>
-          If you're like most people, you don't look forward to dealing with a pushy car salesperson. Cardeal offers a
-          better way for you to sell or trade in your. See the following reasons people choose Cardeal.
-        </p>
+    <section class="container p-4">
+      <div class="card" style="border: 1px solid #ddd;">
+        <h2 class="text-center p-4">The Advantages of Selling Your Car to Cardeal</h2>
+        <div class="card-body">
+          <p class="text-center bm-4">
+            If you're like most people, you don't look forward to dealing with a pushy car salesperson. Cardeal offers a
+            better way for you to sell or trade in your car. See the following reasons people choose Cardeal.
+          </p>
+    
+          <ul>
+            <li>Our offers are very competitive; you'll get more money for your car than a standard dealer trade-in.</li>
+            <li>We are happy to take off your hands "less-than-perfect" cars that have body damage, mechanical problems, or excess wear and tear.</li>
+            <li>We'll buy your car and you aren't required to buy one from us.</li>
+            <li>Avoid getting ripped off by scammers and swindlers. We make the process of selling your car fast, easy, and safe.</li>
+            <li>Cardeal employees are dedicated and professional. This has earned us an A+ BBB rating plus thousands of reviews from satisfied customers.</li>
+            <li>Make and model driven on American roads.</li>
+            <li>We have locations in all 50 states making it easy for you to deliver your car or have us come to you to pick up your car.</li>
+            <li>Cardeal cares about people as much as cars. We have donated over a million meals to Feeding America and Meals on Wheels.</li>
+          </ul>
+        </div>
       </div>
-
-      <ul class="p-4">
-        <li>Our offers are very competitive; you'll get more money for your car than a standard dealer trade-in.</li>
-        <li>
-          We are happy to take off your hands "less-than-perfect" cars that have body damage, mechanical problems, or
-          excess wear and tear.
-        </li>
-        <li>We'll buy your car and you aren't required to buy one from us.</li>
-        <li>
-          Avoid getting ripped off by scammers and swindlers. We make the process of selling your car fast, easy and
-          safe.
-        </li>
-        <li>
-          Cardeal employees are dedicated and professional. This has earned us an A+ BBB rating plus thousands of
-          reviews from satisfied customers.
-        </li>
-        <li>make and model driven ond American roads.</li>
-        <li>
-          We have locations in all 50 states making it easy for you to deliver your car or have us come to you to pick
-          up your car.
-        </li>
-        <li>
-          Cardeal cares about people as much as cars. We have donated over a million meals to Feeding America and Meals
-          on Wheels.
-        </li>
-      </ul>
     </section>
+    
 
     <!-- ************* TESTIMONIALS ******************-->
 
-    <section class="row align-items-center">
-      <div>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <section class="card">
+
+      <div style="background-color: white;" class="container">
+
+        <div class="text-center p-4">
+          <h2>The Testimonials Section</h2>
+          <h4>Don't just take our word for it. See what our customers have said.</h4>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 
                 <div class="carousel-item active text-center">
@@ -166,12 +191,12 @@
                             <i class="bi bi-blockquote-right"></i>
                         </p>
                         <div class="ratings p-1">
-                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
                         </div>
                     </div>
                     <div class="testimonials__name">
                         <h3>B. Drake, Billings MT</h3>
-                        <p class="fw-light">4 stars, March 2020</p>
+                        <p class="fw-light">March 2020</p>
                     </div>
                 </div>
     
@@ -184,12 +209,12 @@
                             <i class="bi bi-blockquote-right"></i>
                         </p>
                         <div class="ratings p-1">
-                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
                         </div>
                     </div>
                     <div class="testimonials__name">
                         <h3>M. Hubbard, Phoenix AZ</h3>
-                        <p class="fw-light">4 stars, May 2021</p>
+                        <p class="fw-light">May 2021</p>
                     </div>
                 </div>
     
@@ -208,7 +233,7 @@
                     </div>
                     <div class="testimonials__name">
                         <h3>T. Hogan, Alexandria VA</h3>
-                        <p class="fw-light">5 stars, August 2021</p>
+                        <p class="fw-light">August 2021</p>
                     </div>
                 </div>
 
@@ -227,7 +252,7 @@
                   </div>
                   <div class="testimonials__name">
                       <h3>H. Furlano, Atlanta GA</h3>
-                      <p class="fw-light">5 stars, October 2020</p>
+                      <p class="fw-light">October 2020</p>
                   </div>
                 </div>
 
@@ -241,20 +266,14 @@
                           <i class="bi bi-blockquote-right"></i>
                       </p>
                       <div class="ratings p-1">
-                          <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
                       </div>
                   </div>
                   <div class="testimonials__name">
                       <h3>A. Moore, Denver CO</h3>
-                      <p class="fw-light">4 stars, May 2021</p>
+                      <p class="fw-light">May 2021</p>
                   </div>
                 </div>
-            </div>
-    
-            <!-- Carousel Controls -->
-            <div class="text-center">
-                <button class="btn btn-outline-light bi bi-arrow-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
-                <button class="btn btn-outline-light bi bi-arrow-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
             </div>
         </div>
       </div>
@@ -264,8 +283,10 @@
 
     <section class="text-center p-5">
 
-      <h2>Recent Purchases</h2>
-      <p>Here are some recently purchased cars that you might be interested in with a trade-in.</p>
+      <div class="card">
+        <h2>Recent Purchases</h2>
+        <p class="p-3">Here are some recently purchased cars that you might be interested in with a trade-in.</p>
+      </div>
 
     </section>
 
@@ -361,14 +382,15 @@
 
     <!-- ************* FAQS ******************-->
 
-    <section>
+    <section class="p-5">
       <h2 class="text-center p-5">The FAQs (Frequently Asked Questions) section</h2>
 
       <div class="accordion container mx-atuo w-50" id="faqAccordion">
-        <!-- Question 1 -->
+
+  
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               How is Cardeal different from other online car buyers?
             </button>
           </h2>
@@ -381,7 +403,7 @@
           </div>
         </div>
 
-        <!-- Question 2 -->
+     
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -395,7 +417,7 @@
           </div>
         </div>
 
-        <!-- Question 3 -->
+     
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -410,7 +432,7 @@
           </div>
         </div>
 
-        <!-- Question 4 -->
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -425,7 +447,7 @@
           </div>
         </div>
 
-        <!-- Question 5 -->
+  
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -442,7 +464,7 @@
           </div>
         </div>
 
-        <!-- Question 6 -->
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -465,9 +487,9 @@
     <section>
       <footer class="bg-dark text-white pt-4">
         <div class="container">
-          <!-- Footer Row -->
+        
           <div class="row">
-            <!-- Logo and Contact Section -->
+        
             <div class="col-md-4 text-center">
               <img src="images/logo_ver.svg" alt="Cardeal logo" class="mb-3" style="max-width: 150px;">
               <p><strong>Contact Us</strong></p>
@@ -478,7 +500,6 @@
               </address>
             </div>
       
-            <!-- Social Media Links Section -->
             <div class="col-md-4 text-center">
               <p><strong>Social Media Links</strong></p>
               <ul class="list-unstyled">
@@ -489,7 +510,6 @@
               </ul>
             </div>
       
-            <!-- Additional Links Section -->
             <div class="col-md-4 text-center">
               <p><strong>Additional Links</strong></p>
               <ul class="list-unstyled">
@@ -502,7 +522,6 @@
             </div>
           </div>
       
-          <!-- Footer Bottom Section -->
           <div class="row mt-4">
             <div class="col text-center">
               <p class="mb-1">&copy; 2021 All rights reserved.</p>
@@ -517,10 +536,6 @@
     </section>
 
   
-
-
-
-
 
     <script type="module" src="./javascripts/main.js"></script>
   </body>
